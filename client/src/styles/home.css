@@ -1,0 +1,98 @@
+/* Main container styling */
+.valentine-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4e1; /* Light pink background */
+    min-height: 100vh;
+    text-align: center;
+    position: relative; /* For confetti to be on top */
+}
+
+/* Greeting styling */
+.greeting {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff69b4; /* Hot pink */
+    margin-bottom: 20px;
+}
+
+/* Grid of pictures */
+.pictures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-image:hover {
+    transform: scale(1.1);
+}
+
+/* Proposal styling */
+.proposal {
+    font-size: 2rem;
+    color: #dc143c; /* Crimson */
+    margin: 30px 0;
+}
+
+/* Options container styling */
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.option-button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #dc143c; /* Crimson */
+    transform: scale(1.1);
+}
+
+/* Result image container */
+.result-image-container {
+    margin-top: 20px;
+}
+
+/* Image sizing */
+.result-image {
+    width: 80%; /* Adjust size as needed */
+    max-width: 500px; /* Max width to prevent too large images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Confetti styling */
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
